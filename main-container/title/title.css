@@ -1,0 +1,34 @@
+.title-container {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.title-container h2 {
+    margin-top: 0;
+}
+
+.title-container h1 {
+    margin-bottom: 0;
+}
+
+.title_size-S {
+    font-size: .8em;
+}
+
+.title_size-M {
+    font-size: 1em;
+}
+
+.title_size-L {
+    font-size: 1.4em;
+}
+
+.title_underlined-offset {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+}

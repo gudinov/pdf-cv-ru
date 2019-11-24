@@ -1,0 +1,295 @@
+.print {
+  position: fixed;
+  bottom: 1.3em;
+  right: 2.3em;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration:none;
+  color:#fff;
+  letter-spacing:1px;
+  font-size:2rem;
+  box-sizing:border-box;
+}
+
+.print__fa-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.print span{
+  position:relative;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:80px;
+  height:80px;
+}
+
+.print span:before{
+  content:'';
+  width:100%;
+  height:100%;
+  display:block;
+  position:absolute;
+  border-radius:100%;
+  border:3px solid #f3cf14;
+  box-sizing:border-box;
+  transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+  box-shadow: 0 30px 85px rgba(156, 91, 189, 0.17), 0 15px 35px rgba(156, 91, 189, 0.15);
+  background-color: #3e3b3ca8
+}
+
+.print:hover span:before{
+  transform:scale(0.8);
+  box-shadow: 0 20px 55px rgba(156, 91, 189, 0.17), 0 15px 35px rgba(156, 91, 189, 0.15);
+}
+
+.print .dots-container{
+  opacity:0;
+  animation: intro 1.6s;
+  animation-fill-mode: forwards;
+}
+
+.print .dots-container__dot{
+  width:4px;
+  height:4px;
+  display:block;
+  background-color:#F3CF14;
+  border-radius:100%;
+  position:absolute;
+  transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+}
+
+.print .dots-container__dot:nth-child(1){
+  top: 5em;
+  left: 5em;
+  transform:rotate(-140deg);
+  animation: swag1-out 0.3s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+
+.print .dots-container__dot:nth-child(2){
+  top: 5em;
+  right: 5em;
+  transform:rotate(140deg);
+  animation: swag2-out 0.3s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+
+.print .dots-container__dot:nth-child(3){
+  bottom: 5em;
+  left: 5em;
+  transform:rotate(140deg);
+  animation: swag3-out 0.3s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+
+.print .dots-container__dot:nth-child(4){
+  bottom: 5em;
+  right: 5em;
+  transform:rotate(-140deg);
+  animation: swag4-out 0.3s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+
+.print:hover .dots-container__dot:nth-child(1){
+  animation: swag1 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.print:hover .dots-container__dot:nth-child(2){
+  animation: swag2 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.print:hover .dots-container__dot:nth-child(3){
+  animation: swag3 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.print:hover .dots-container__dot:nth-child(4){
+  animation: swag4 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.print .fa-icon {
+  z-index: 3;
+}
+
+@keyframes intro {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes swag1 {
+  0% {
+    top: 5em;
+    left: 5em;
+    width:4px;
+  }
+  50% {
+    width:30px;
+    opacity:1;
+  }
+  100% {
+    top: 2em;
+    left: 2em;
+    width:4px;
+    opacity:1;
+  }
+}
+
+@keyframes swag1-out {
+  0% {
+    top: 2em;
+    left: 2em;
+    width:4px;
+  }
+  50% {
+    width:30px;
+    opacity:1;
+  }
+  100% {
+    top: 5em;
+    left: 5em;
+    width:4px;
+    opacity:0;
+  }
+}
+
+@keyframes swag2 {
+  0% {
+    top:5em;
+    right:5em;
+    width:4px;
+  }
+  50% {
+    width:15px;
+    opacity:1;
+  }
+  100% {
+    top:2em;
+    right:2em;
+    width:4px;
+    opacity:1;
+  }
+}
+
+@keyframes swag2-out {
+  0% {
+    top:2em;
+    right:2em;
+    width:4px;
+  }
+  50% {
+    width:15px;
+    opacity:1;
+  }
+  100% {
+    top:5em;
+    right:5em;
+    width:4px;
+    opacity:0;
+  }
+}
+
+@keyframes swag3 {
+  0% {
+    bottom:5em;
+    left:5em;
+    width:4px;
+  }
+  50% {
+    width:15px;
+    opacity:1;
+  }
+  100% {
+    bottom:2em;
+    left:2em;
+    width:4px;
+    opacity:1;
+  }
+}
+
+@keyframes swag3-out {
+  0% {
+    bottom:2em;
+    left:2em;
+    width:4px;
+  }
+  50% {
+    width:30px;
+    opacity:1;
+  }
+  100% {
+    bottom:5em;
+    left:5em;
+    width:4px;
+    opacity:0;
+  }
+}
+
+@keyframes swag4 {
+  0% {
+    bottom:5em;
+    right:5em;
+    width:4px;
+  }
+  50% {
+    width:15px;
+    opacity:1;
+  }
+  100% {
+    bottom:2em;
+    right:2em;
+    width:4px;
+    opacity:1;
+  }
+}
+
+@keyframes swag4-out {
+  0% {
+    bottom:2em;
+    right:2em;
+    width:4px;
+  }
+  50% {
+    width:15px;
+    opacity:1;
+  }
+  100% {
+    bottom:5em;
+    right:5em;
+    width:4px;
+    opacity:0;
+  }
+}
+
+.main-container_intro.print {
+  bottom: -5em;
+  animation:  printAwake .5s ease-in forwards .7s;
+}
+
+@keyframes printAwake {
+  from {
+    bottom: -5em;
+  }
+  to {
+    bottom: 1.3em;
+  }
+}
+
+@media print {
+  .print {
+    display: none;
+  }
+}

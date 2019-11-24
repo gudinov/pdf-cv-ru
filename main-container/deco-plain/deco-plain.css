@@ -1,0 +1,44 @@
+
+
+.deco-plane__separator {
+    position: relative;
+    min-width: 2px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.deco-plane__separator::after {
+    content: '';
+    position: absolute;
+    min-width: 2px;
+    height: 100%;
+    background: #bbbbbb;
+}
+
+.deco-plane {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.deco-plane__column_left h1,
+.deco-plane__column_left h3,
+.deco-plane__column_left ul,
+.deco-plane__column_left p {
+    text-align: end;
+}
+
+
+.main-container_intro .deco-plane__separator::after {   
+    animation: separatorAwake 1s ease-in-out;
+}
+
+@keyframes separatorAwake {
+    from {
+      height: 0%;
+    }
+  
+    to {
+      height: 100%;
+    }
+}

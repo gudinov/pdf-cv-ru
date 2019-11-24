@@ -1,0 +1,140 @@
+.progress {
+    position: relative;
+    height: 5px;
+    width: 130px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.progress .progress__main-line,
+.progress .progress__bg-line {
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+}
+
+.progress .progress__main-line {
+    background-color: #9c5bbd;
+    z-index: 2;
+}
+
+.progress .progress__bg-line {
+    background-color: #bcbcbc;
+}
+
+.photoshop .progress__main-line {
+    width: 40%;
+}
+
+.webpack .progress__main-line {
+    width: 70%;
+}
+
+.html-css .progress__main-line {
+    width: 60%;
+}
+
+.javascript .progress__main-line {
+    width: 90%;
+}
+
+.angular .progress__main-line {
+    width: 70%;
+}
+
+.react .progress__main-line {
+    width: 80%;
+}
+
+.main-container_intro .photoshop .progress__main-line {
+    width: 0;
+    animation: photoshopAwake 1s 1s cubic-bezier(0.29,-0.04, 0.17, 0.74) forwards;
+}
+
+@keyframes photoshopAwake {
+    from {
+      width: 0;
+    }
+  
+    to {
+        width: 40%;
+    }
+}
+
+.main-container_intro .html-css .progress__main-line {
+    width: 0;
+    animation: htmlCssAwake 1s 1s cubic-bezier(0.29,-0.04, 0.17, 0.74) forwards;
+}
+
+@keyframes htmlCssAwake {
+    from {
+      width: 0;
+    }
+  
+    to {
+        width: 60%;
+    }
+}
+
+
+.main-container_intro .javascript .progress__main-line {
+    width: 0;
+    animation: javascriptAwake 1s 1s cubic-bezier(0.29,-0.04, 0.17, 0.74) forwards;
+}
+
+@keyframes javascriptAwake {
+    from {
+      width: 0;
+    }
+  
+    to {
+        width: 90%;
+    }
+}
+
+.main-container_intro .webpack .progress__main-line {
+    width: 0;
+    animation: webpackAwake 1s 1s cubic-bezier(0.29,-0.04, 0.17, 0.74) forwards;
+}
+
+@keyframes webpackAwake {
+    from {
+      width: 0;
+    }
+  
+    to {
+        width: 70%;
+    }
+}
+
+.main-container_intro .angular .progress__main-line {
+    width: 0;
+    animation: angularAwake 1s 1s cubic-bezier(0.29,-0.04, 0.17, 0.74) forwards;
+}
+
+@keyframes angularAwake {
+    from {
+      width: 0;
+    }
+  
+    to {
+        width: 70%;
+    }
+}
+
+.main-container_intro .react .progress__main-line {
+    width: 0;
+    animation: reactAwake 1s 1s cubic-bezier(0.29,-0.04, 0.17, 0.74) forwards;
+}
+
+@keyframes reactAwake {
+    from {
+      width: 0;
+    }
+  
+    to {
+        width: 80%;
+    }
+}

@@ -1,0 +1,70 @@
+.fa-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fa-size-S
+
+.fa-icon_margin-l {
+    margin-left: 15px;
+}
+
+.fa-icon_margin-r {
+    margin-right: 15px;
+}
+
+.fa-icon_margin-lr {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.fa-skype {
+    background-image: url('../../assets/icons/skype-brands.svg');
+}
+
+.fa-vk {
+    background-image: url('../../assets/icons/vk-brands.svg');
+}
+
+.fa-telegram {
+    background-image: url('../../assets/icons/telegram-brands.svg');
+}
+
+.fa-print {
+    background-image: url('../../assets/icons/print-solid.svg');
+}
+
+.fa-location {
+    background-image: url('../../assets/icons/map-marker-alt-solid.svg');
+}
+
+.fa-react {
+    background-image: url('../../assets/icons/react-brands.svg');
+}
+
+.fa-angular {
+    background-image: url('../../assets/icons/angular-brands.svg');
+}
+
+.fa-css {
+    background-image: url('../../assets/icons/css3-alt-brands.svg');
+}
+
+.fa-html {
+    background-image: url('../../assets/icons/html5-brands.svg');
+}
+
+.fa-js {
+    background-image: url('../../assets/icons/js-brands.svg');
+}
+
+.fa-webpack {
+    background-image: url('../../assets/icons/icon.png');
+}
+
+.fa-photoshop {
+    background-image: url('../../assets/icons/adobe-round-photoshop-512.png');
+}

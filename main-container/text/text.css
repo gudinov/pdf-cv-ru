@@ -1,0 +1,38 @@
+.text {
+    display: inline;
+    font-size: .8em;
+    line-height: 1.4em;
+}
+
+.text_bold {
+    font-weight: bold;
+}
+
+.text_small {
+    text-transform: lowercase;
+}
+
+.text_big {
+    text-transform: uppercase;
+}
+
+.text_animation-line {
+    position: relative;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.text_animation-line::after {
+    display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	content: "";
+    transition: width 0.3s ease-out;
+}
+
+.text_animation-line:hover:after,
+.text_animation-line:focus:after {
+	width: 100%;
+}
